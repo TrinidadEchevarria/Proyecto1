@@ -1,0 +1,55 @@
+VS Code -> Es un IDE (Entorno de desarrollo integrado) desarrollado por Microsoft, conjunto de herramientas
+diseñadas para facilitarnos la creación y el desarrollo de nuestros programas o aplicaciones 
+
+Git: es un software de control de versionado que nos va a permitir programar colaborativamente, es la tecnología que mantiene el sistema de versionado
+Git BASH: nos permite tener en windows una terminal más ágil y funcional para el desarrollo
+Teconologías de front-end: 
+- CSS 
+- Html 
+- JavaScript
+Teconologías de back-end: 
+- Node.js -> Framework, entorno de desarrollo, 
+JS solo se ejecutaba en el navegador, Node.js nos va a permitir ejecutar código de JS en nuestra computadora
+Esta construido bajo el motor v8 de Google Chrome, esto lo convierte en un entorno de ejecución para Java Script
+y logra que el lenguaje deje de depender del navegador para poder ejecutarse, de esta forma podemos programar tanto
+el back-end como el front-end en un mismo lenguaje: Java Script 
+Version instalada: v16.15.0
+- Express
+Base de datos: 
+- MySQL
+- Sequelize 
+JavaScript para front-end
+API's
+React
+
+Tipos de modulos
+- Los módulos nativos: ya vienen instalados cuando creamos un proyecto de Node.js. 
+- Los módulos de terceros: podemos instalarlos usando algo llamado npm que vamos a 
+conocer más adelante.
+- Los módulos creados: aquellos que escribimos nosotros. 
+El nombre de la variable que almacene el módulo que estamos requiriendo suele recibir el mismo nombre del módulo
+
+¿Cómo requerir un módulo? Situarse dentro del archivo en el que queremos incorporarlo y hacer uso de la función nativa de Node.js: require(). Esta recibe como parámetro un string que será el nombre del módulo. Esta función devuelve un objeto literal, por lo tanto, es importante guardar la ejecución en una variable para poder acceder, a todas las propiedades y funcionalidades del módulo.
+
+Creación de módulos
+Archivo con extensión js, dentro de ese archivo colocar la funcionalidad del módulo. Luego para exportarlo debo utilizar: module.exports = nombreModulo;
+Para importar ese modulo debo ir al archivo donde lo quiero utilizar:
+let nombreVariable = require(‘./nombreModulo’);
+
+Exportar Ejemplo:
+let arrayDePeliculas = ["Harry Potter","Her", "Up", "Lego"];
+module.exports = arrayDePeliculas;
+Importar Ejemplo:
+let moduloNativo = require('http'); → modulo existente 
+let moduloInstalado = require('axios'); → modulo existente 
+let moduloPropio = require('./miFuncion'); → modulo local
+
+GitHub -> Es un lugar en la nube, es una plataforma colaborativa que nos va a permitir llevar un control de versión sobre nuestro código.
+
+- Repositorio: lugar en donde se irán almacenando los archivos de nuestro proyecto y a través del cual podremos hacer seguimiento de los mismos. 
+- Remotos: viven en la nube, es decir, en GitHub.
+- Locales: viven en nuestra computadora.
+- Repositorio local: es el que tiene todos los archivos (que hayas guardado en él) en nuestra computadora.
+- commits : paquetes que nos van a permitir ir haciendo un seguimiento de los cambios que vamos realizando, dado que cada uno de ellos tiene una timestamp, o fecha de creación, y un autor. Los commits van a ser nuestro historial de cambios que se fueron haciendo en el proyecto.
+
+Un repositorio local es el que se encuentra en mi computadora y el remoto es el de GitHub.

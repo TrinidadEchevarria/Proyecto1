@@ -1,0 +1,31 @@
+Repositorio local en GitHub
+En la terminal:
+git init //crea el repositorio
+git config user.name "nombreUsuario" //nombre de usuario de nuestra cuenta de gitHub
+git config user.email "email" //email con el que creamos la cuenta de gitHub
+git remote add origin https://github.com/Proyecto //apunta al repositorio remoto
+
+Para configurar nuestra identidad de manera global y no tener que estar aclarando
+siempre nuestro e-mail y nombre de usuario, agregar la palabra --global 
+git config --gobal user.name "nombreDeUsuario" 
+git config --gobal user.email "nombre@email.com" 
+
+Comandos:
+git add . //agrega todos los archivos 
+git commit -m "mensaje" //comitea los cambios hechos
+git pull //actualiza el codigo 
+git push //envia los cambios al repositorio remoto
+git status //seguimiento del estado de los archivos
+
+Bajar archivos/proyectos de GitHub:
+Para descargar por primera vez un repositorio remoto a nuestra máquina, tendremos que clonarlo.
+- Abrir una terminal en la ubicación en donde queramos clonar el proyecto.
+- Copiar la URL del repositorio que queremos clonar.
+- Escribir el comando git clone .
+- Pegar la URL después de la palabra clone (dejando un espacio de por medio) y presionar enter.
+
+git clone https://github.com/usuario/repositorio.git... 
+
+Permite crear una copia exacta en la computadora de todos los archivos existentes en un repositorio remoto.
+Se ejecuta este comando una única vez, cuando no tengo los archivos en la computadora.
+Para obtener la url -> en gitHub boton Clone or download.
